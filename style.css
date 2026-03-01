@@ -1,1 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
 
+header {
+  text-align: center;
+  padding: 20px;
+  background: #f8f0f8;
+}
+
+header h1 {
+  margin: 0;
+  color: #d45fa2;
+}
+
+header p {
+  margin-top: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.abas {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.aba-btn {
+  margin: 0 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #d45fa2;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.aba-btn:hover {
+  background: #c1388a;
+}
+
+.conteudo-aba {
+  padding: 10px 20px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.produto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(25% - 15px);
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.produto button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background: #d45fa2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.produto button:hover {
+  background: #c1388a;
+}
+
+@media (max-width: 768px) {
+  .produto {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .produto {
+    width: 100%;
+  }
+}

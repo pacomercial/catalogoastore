@@ -1,14 +1,15 @@
+
 const produtosFeminino = [
   { nome: "Vestido Floral", preco: "R$79,90", imagem: "imagens/vestido-floral.jpg" },
   { nome: "Blusa Elegante", preco: "R$69,90", imagem: "imagens/blusa-elegante.jpg" }
- 
 ];
+
 
 const produtosMasculino = [
   { nome: "Camisa Social", preco: "R$79,90", imagem: "imagens/camisa-social.jpg" },
   { nome: "Bermuda Jeans", preco: "R$69,90", imagem: "imagens/bermuda-jeans.jpg" }
-  
 ];
+
 
 function mostrarProdutos() {
   const containerF = document.getElementById("produtos-feminino");
@@ -48,7 +49,7 @@ function abrirAba(nomeAba) {
 function comprar(nome, preco) {
   const numeroWhats = "5591999999999"; 
   const texto = Olá! Quero comprar: ${nome} - ${preco};
-  window.open(https://coloca o link do zap aqui seu animal
+  window.open(https:
 }
 
 

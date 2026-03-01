@@ -1,54 +1,59 @@
 
-const produtosFeminino = [
-  { nome: "Vestido Floral", preco: "R$79,90", imagem: "imagens/vestido-floral.jpg" },
-  { nome: "Blusa Elegante", preco: "R$69,90", imagem: "imagens/blusa-elegante.jpg" }
+const fotosFeminino = [
+  "foto1.jpg",
+  "foto2.jpg",
+  "foto3.jpg"
+];
+
+const fotosMasculino = [
+  "foto1.jpg",
+  "foto2.jpg",
+  "foto3.jpg"
 ];
 
 
-const produtosMasculino = [
-  { nome: "Camisa Social", preco: "R$79,90", imagem: "masculino/conjuntomasc(1)" },
-  { nome: "Bermuda Jeans", preco: "R$69,90", imagem: "imagens/bermuda-jeans.jpg" }
-];
+const pastas = {
+  feminino: "feminino/",
+  masculino: "masculino/"
+};
 
 
 function mostrarProdutos() {
+  
   const containerF = document.getElementById("produtos-feminino");
-  produtosFeminino.forEach(p => {
+  fotosFeminino.forEach(nomeArquivo => {
     const div = document.createElement("div");
     div.className = "produto";
     div.innerHTML = 
-      <img src="${p.imagem}" alt="${p.nome}">
-      <div class="nome">${p.nome}</div>
-      <div class="preco">${p.preco}</div>
-      <button onclick="comprar('${p.nome}', '${p.preco}')">Comprar</button>
+      <img src="${pastas.feminino}${nomeArquivo}" alt="${nomeArquivo}">
+      <button onclick="comprar('${nomeArquivo}')">Comprar</button>
     ;
     containerF.appendChild(div);
   });
 
+  // Masculino
   const containerM = document.getElementById("produtos-masculino");
-  produtosMasculino.forEach(p => {
+  fotosMasculino.forEach(nomeArquivo => {
     const div = document.createElement("div");
     div.className = "produto";
     div.innerHTML = 
-      <img src="${p.imagem}" alt="${p.nome}">
-      <div class="nome">${p.nome}</div>
-      <div class="preco">${p.preco}</div>
-      <button onclick="comprar('${p.nome}', '${p.preco}')">Comprar</button>
+      <img src="${pastas.masculino}${nomeArquivo}" alt="${nomeArquivo}">
+      <button onclick="comprar('${nomeArquivo}')">Comprar</button>
     ;
     containerM.appendChild(div);
   });
 }
 
-
+// Função para abrir aba
 function abrirAba(nomeAba) {
   document.querySelectorAll('.conteudo-aba').forEach(aba => aba.style.display = 'none');
   document.getElementById(nomeAba).style.display = 'block';
 }
 
 
-function comprar(nome, preco) {
+function comprar(nomeArquivo) {
   const numeroWhats = "5591999999999"; 
-  const texto = Olá! Quero comprar: ${nome} - ${preco};
+  const texto = Olá! Quero comprar: ${nomeArquivo};
   window.open(https:
 }
 

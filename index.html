@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Araújo Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Araújo Store</h1>
+    <p>Loja online de roupas femininas e masculinas</p>
+  </header>
+
+  
+  <div class="abas">
+    <button class="aba-btn" onclick="abrirAba('feminino')">Feminino</button>
+    <button class="aba-btn" onclick="abrirAba('masculino')">Masculino</button>
+  </div>
+
+ 
+  <div id="feminino" class="conteudo-aba">
+    <h2>Vestidos</h2>
+    <div id="produtos-vestidos" class="produtos"></div>
+
+    <h2>Blusas</h2>
+    <div id="produtos-blusas" class="produtos"></div>
+
+    <h2>Bermudas</h2>
+    <div id="produtos-bermudas" class="produtos"></div>
+
+    <h2>Conjuntos</h2>
+    <div id="produtos-conjuntos" class="produtos"></div>
+  </div>
+
+ 
+  <div id="masculino" class="conteudo-aba" style="display:none">
+    <h2>Camisas</h2>
+    <div id="produtos-camisas" class="produtos"></div>
+
+    <h2>Bermudas</h2>
+    <div id="produtos-bermudas-masc" class="produtos"></div>
+
+    <h2>Conjuntos</h2>
+    <div id="produtos-conjuntos-masc" class="produtos"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

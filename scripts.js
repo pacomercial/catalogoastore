@@ -6,7 +6,7 @@ const produtosFeminino = [
 
 
 const produtosMasculino = [
-  { nome: "Camisa Social", preco: "R$79,90", imagem: "https://github.com/pacomercial/catalogoastore/blob/main/feminino/vestido-estampa%20(1).jpg" },
+  { nome: "Camisa Social", preco: "R$79,90", imagem: "masculino/conjuntomasc(1)" },
   { nome: "Bermuda Jeans", preco: "R$69,90", imagem: "imagens/bermuda-jeans.jpg" }
 ];
 
